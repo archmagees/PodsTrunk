@@ -1,0 +1,17 @@
+source 'https://github.com/cocoapods/specs.git'
+platform :ios, '9.0'
+inhibit_all_warnings!
+use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target '__ProjectName__' do
+  pod '__ProjectName__', :path => './'
+
+  target '__ProjectName__Tests' do
+    inherit! :search_paths
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'OCMock'
+  end
+end
