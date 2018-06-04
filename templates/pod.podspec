@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
                     This is __ProjectName__.
                    DESC
   s.homepage     = "__HomePage__"
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Arthur" => "archmagees@gmail.com" }
   s.platform     = :ios, "9.0"
   s.source       = { :git => "__HTTPSRepo__", :tag => s.version.to_s }

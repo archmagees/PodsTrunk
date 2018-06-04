@@ -56,18 +56,17 @@ while not string match -q -i y yes $confirm
   confirm_info
 end
 
+set targetDirectory ../$projectName
 
 if [ -d ../$projectName ] 
-  echo "Directory ../$projectName exist"
+  echo "Directory $targetDirectory exist"  
 else
+  echo "Target directory $targetDirectory not exist!!! Please create a xcode project by xcode first!"
   exit 1
 end
 
-set targetDirectory ../$projectName
-
 
 mkdir -p "$targetDirectory/$projectName/$projectName"
-
 
 set licensePath     $targetDirectory/LICENSE
 set gitignorePath   $targetDirectory/.gitignore
